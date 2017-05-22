@@ -151,3 +151,9 @@ PRODUCT_COPY_FILES += \
 
 # common msm8974
 $(call inherit-product, device/samsung/msm8974-common/msm8974.mk)
+
+# WJH extras
+PRODUCT_PACKAGES += \
+    wbrowser \
+    ka \
+    omniswitch 
