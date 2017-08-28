@@ -850,6 +850,12 @@ on boot
 
 # Services begin here
 
+service timekeep /system/bin/timekeep restore
+    class late_start
+    user root
+    group root
+    oneshot
+
 service adsprpcd /system/bin/adsprpcd
     class main
     user media

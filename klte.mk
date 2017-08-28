@@ -152,8 +152,12 @@ PRODUCT_COPY_FILES += \
 # common msm8974
 $(call inherit-product, device/samsung/msm8974-common/msm8974.mk)
 
+# Sony timekeep
+PRODUCT_PACKAGES += \
+    timekeep \
+    TimeKeep
+
 # WJH extras
 PRODUCT_PACKAGES += \
-    wbrowser \
     ka \
     omniswitch 

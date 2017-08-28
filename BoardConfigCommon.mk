@@ -35,10 +35,10 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
 TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
-TARGET_KERNEL_CONFIG := msm8974_aklu_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/klte-aklu
-# TARGET_KERNEL_CONFIG := msm8974_sec_defconfig
-# TARGET_KERNEL_SOURCE := kernel/samsung/klte
+#TARGET_KERNEL_CONFIG := msm8974_aklu_defconfig
+#TARGET_KERNEL_SOURCE := kernel/samsung/klte-aklu
+TARGET_KERNEL_CONFIG := msm8974_sec_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/klte
 
 # Audio
 BOARD_HAVE_NEW_QCOM_CSDCLIENT := true
